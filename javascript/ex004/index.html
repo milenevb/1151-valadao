@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Calculador de Desconto</title>
+</head>
+<body>
+    <h1>Desconto em Porcentagem</h1>
+    <button onclick="desconto()">Vamos calcular!</button>
+    <script>
+        function desconto() {
+            let n = Number(prompt("Qual é o preço do produto?"))
+            document.writeln (`<h1> Preço Original: R$${n} </h1>`)
+
+
+            let calculo = 10
+            while (calculo <=90) {
+                document.writeln (`<br>O produto - ${calculo}% = R${n-(n*calculo/100)}`)
+                calculo +=10
+            }
+        }
+    </script>
+</body>
+</html>
