@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somador de Números</title>
+</head>
+<body>
+    <h1>Somador de Números</h1>
+    <button onclick="somador()">Começar agora</button>
+    <p id="resposta">A resposta vai aparecer aqui...</p>
+
+    <script>
+        function somador() {
+            let resp = document.getElementById ("resposta")
+            resp.innerHTML =""
+            let num = 0
+            let soma = 0
+            let c=1
+            while (c<=5) {
+                num = Number(prompt(`Digite o valor ${c}`))
+                resp.innerHTML += `${num} `
+                if (c < 5) {
+                    resp.innerHTML += "+"
+                } else {
+                    resp.innerHTML += "= "
+                }
+                soma = soma + num
+                c++
+            }
+            resp.innerHTML += `${soma}`
+        }
+    </script>
+</body>
+</html>
