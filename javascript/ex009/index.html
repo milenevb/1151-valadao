@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Números</title>
+</head>
+<body>
+    <h1>Gerador de Números</h1>
+    <button onclick="gerar()">Gerar um valor</button>
+    <p id="resultado">O resultado vai aparecer <aqui class=""></aqui></p>
+
+    <script>
+        let resultado = document.getElementById("resultado")
+
+        function gerar() {
+            let n = Math.floor|(Math.random() * 10 + 1)
+            resultado.innerHTML = `Gerei o numero ${n}`
+        }
+    </script>
+</body>
+</html>

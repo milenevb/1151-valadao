@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>-= Sorteio de nomes =-</h1>
+        <p id="participantes">Os participantes</p>
+        <button onclick="sorteia()">Sortear!</button>
+        <p id="vencedor">*O vencendor é &#x1F941;&#x1F941;&#x1F941;*</p>
+
+        <script>
+            /* VETORES (Array)
+                
+                pessoas
+                [Jose] [Paula] [Maria] [Marcos] [Ana Maria]
+                   0      1       2        3         4              
+           */
+            
+            let pessoas = new Array("José", "Paula", "Maria", "Marcos", "Ana Maria")
+            
+            let p = document.getElementById("participantes")
+            let v = document.getElementById("vencedor")
+            
+            p.innerHTML = `Participam do sorteio: ${pessoas.toString()}`
+            function sorteia() {
+                let min = 0
+                let max = pessoas.length
+                let num = Math.floor(Math.random() * max + min)
+
+                v.innerHTML = `*-* &#x1F389; <strong>${pessoas[num]}!</strong> &#x1F389; *-*`
+            }
+        </script>
+    </main>
+</body>
+</html>

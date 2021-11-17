@@ -1,0 +1,28 @@
+body {
+    background-color: rgba(241, 239, 86, 0.822);
+}
+
+main {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+button {
+    display: block;
+    margin: auto;
+    margin-top: 70px;
+    text-align: center;
+    font-size: 50px;
+
+    color: white;
+    background-color: rgb(167, 1, 1);
+    border-radius: 100%;
+    border-width: 30px;
+    border-color: red;
+    border-style: double;
+    box-shadow: 30px 30px 20px rgba(53, 46, 46, 0.596);
+    
+    height: 370px;
+}
