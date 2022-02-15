@@ -1,0 +1,11 @@
+div{
+    background-color: aliceblue;
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px black;
+}
+body{
+    background-image: linear-gradient(to bottom, rgb(15, 223, 238), rgb(1, 82, 119))
+}
